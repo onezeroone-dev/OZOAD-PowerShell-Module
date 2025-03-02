@@ -10,6 +10,7 @@ Get-OZOADUsers
     -UserFile       <String>
     -UserList       <Array>
     -UserProperties <Array>
+    -Enabled
 ```
 ## Parameters
 |Parameter|Description|

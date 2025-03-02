@@ -40,7 +40,7 @@ Function Get-OZOADComputers {
         .EXAMPLE
         Get-OZOADComputers -ComputerList "DESKTOP-OZO80202","DESKTOP-OZO80203" -Properties "ManagedBy","PrimaryGroup" | Format-Table
         .EXAMPLE
-        Get-OZOADComputers -ComputerFile "C:\Temp\users.txt" -Properties "ManagedBy","PrimaryGroup" | Export-Csv -Path "C:\Temp\ozoADComputers.csv"
+        Get-OZOADComputers -ComputerFile "C:\Temp\computers.txt" -Properties "ManagedBy","PrimaryGroup" | Export-Csv -Path "C:\Temp\ozoADComputers.csv"
         .LINK
         https://github.com/onezeroone-dev/OZO-PowerShell-Module/blob/main/Documentation/Get-OZOADUsers.md
     #>
