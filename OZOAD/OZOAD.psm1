@@ -29,18 +29,18 @@ Function Get-OZOADComputers {
         See description.
         .DESCRIPTION
         Returns an array of AD computers including specified properties.
-        .PARAMETER UserFile
+        .PARAMETER ComputerFile
         A file containing computers to query (one per line). May be combined with ComputerList. Returns all computers when ComputerFile and ComputerList are not provided.
-        .PARAMETER UserList
+        .PARAMETER ComputerList
         A comma-separated list of computers to query. May be combined with ComputerFile. Returns all computers when ComputerFile and ComputerList are omitted.
-        .PARAMETER UserProperties
+        .PARAMETER ComputrProperties
         A comma-separated list of properties to return. When omitted, returns all properties.
         .PARAMETER Enabled
         Return only enabled computers.
         .EXAMPLE
-        Get-OZOADComputers -ComputerList "DESKTOP-OZO80202","DESKTOP-OZO80203" -Properties "ManagedBy","PrimaryGroup" | Format-Table
+        Get-OZOADComputers -ComputerList "DESKTOP-OZO80202","DESKTOP-OZO80203" -ComputerProperties "createTimeStamp","PrimaryGroup" | Format-Table
         .EXAMPLE
-        Get-OZOADComputers -ComputerFile "C:\Temp\computers.txt" -Properties "ManagedBy","PrimaryGroup" | Export-Csv -Path "C:\Temp\ozoADComputers.csv"
+        Get-OZOADComputers -ComputerFile "C:\Temp\computers.txt" -ComputerProperties "createTimeStamp","PrimaryGroup" | Export-Csv -Path "C:\Temp\ozoADComputers.csv"
         .LINK
         https://github.com/onezeroone-dev/OZO-PowerShell-Module/blob/main/Documentation/Get-OZOADUsers.md
     #>
@@ -86,9 +86,9 @@ Function Get-OZOADUsers {
         .PARAMETER Enabled
         Return only enabled users.
         .EXAMPLE
-        Get-OZOADUsers -UserList "msantos","gkaplan" -Properties "DisplayName","EmailAddress" | Format-Table
+        Get-OZOADUsers -UserList "msantos","gkaplan" -UserProperties "DisplayName","EmailAddress" | Format-Table
         .EXAMPLE
-        Get-OZOADUsers -UserFile "C:\Temp\users.txt" -Properties "DisplayName","EmailAddress" | Export-Csv -Path "C:\Temp\ozoADUsers.csv"
+        Get-OZOADUsers -UserFile "C:\Temp\users.txt" -UserProperties "DisplayName","EmailAddress" | Export-Csv -Path "C:\Temp\ozoADUsers.csv"
         .LINK
         https://github.com/onezeroone-dev/OZO-PowerShell-Module/blob/main/Documentation/Get-OZOADUsers.md
     #>

@@ -23,9 +23,9 @@ Get-OZOADComputers
 ## Examples
 ### Example 1
 ```powershell
-Get-OZOADComputers -ComputerList "DESKTOP-OZO80202","DESKTOP-OZO80203" -Properties "ManagedBy","PrimaryGroup" | Format-Table
+Get-OZOADComputers -ComputerList "DESKTOP-OZO80202","DESKTOP-OZO80203" -ComputerProperties "createTimeStamp","PrimaryGroup" | Format-Table
 ```
 ### Example 2
 ```powershell
-Get-OZOADComputers -ComputerFile "C:\Temp\computers.txt" -Properties "ManagedBy","PrimaryGroup" | Export-Csv -Path "C:\Temp\ozoADComputers.csv"
+Get-OZOADComputers -ComputerFile "C:\Temp\computers.txt" -ComputerProperties "createTimeStamp","PrimaryGroup" | Export-Csv -Path "C:\Temp\ozoADComputers.csv"
 ```

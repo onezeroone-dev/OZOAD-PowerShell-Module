@@ -23,9 +23,9 @@ Get-OZOADUsers
 ## Examples
 ### Example 1
 ```powershell
-Get-OZOADUsers -UserList "msantos","gkaplan" -Properties "DisplayName","EmailAddress" | Format-Table
+Get-OZOADUsers -UserList "msantos","gkaplan" -UserProperties "DisplayName","EmailAddress" | Format-Table
 ```
 ### Example 2
 ```powershell
-Get-OZOADUsers -UserFile "C:\Temp\users.txt" -Properties "DisplayName","EmailAddress" | Export-Csv -Path "C:\Temp\ozoADUsers.csv"
+Get-OZOADUsers -UserFile "C:\Temp\users.txt" -UserProperties "DisplayName","EmailAddress" | Export-Csv -Path "C:\Temp\ozoADUsers.csv"
 ```
