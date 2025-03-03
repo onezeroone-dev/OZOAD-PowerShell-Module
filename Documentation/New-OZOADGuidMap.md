@@ -11,7 +11,7 @@ New-OZOADGuidMap
 
 ## Examples
 ```powershell
-[Hashtable]$guidMap = (New-OZOADDGuidMap)
+[Hashtable]$guidMap = (New-OZOADGuidMap)
 ```
 
 ## Outputs

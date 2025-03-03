@@ -11,7 +11,7 @@ New-OZOADExtendedRightsMap
 
 ## Examples
 ```powershell
-[Hashtable]$erMap = (New-ADDExtendedRightsMap)
+[Hashtable]$erMap = (New-OZOADExtendedRightsMap)
 ```
 
 ## Outputs

@@ -133,7 +133,7 @@ Function New-OZOADExtendedRightsMap {
         .DESCRIPTION
         Creates a extended rights map which can be used for AD delegation tasks.
         .EXAMPLE
-        [Hashtable]$erMap = (New-ADDExtendedRightsMap)
+        [Hashtable]$erMap = (New-OZOADExtendedRightsMap)
         .LINK
         https://github.com/onezeroone-dev/OZO-PowerShell-Module/blob/main/Documentation/New-OZOADExtendedRightsMap.md
     #>
@@ -159,7 +159,7 @@ Function New-OZOADGuidMap {
         .DESCRIPTION
         Returns aa GUID map which can be used for AD delegation tasks.
         .EXAMPLE
-        [Hashtable]$guidMap = (New-OZOADDGuidMap)
+        [Hashtable]$guidMap = (New-OZOADGuidMap)
         .OUTPUTS
         Hashtable
         .LINK
@@ -199,7 +199,7 @@ Function Set-OZOADPad {
     #>
     param(
         [Parameter(Mandatory=$true,HelpMessage="The distinguished name of the organizational unit to process")][String]$OrganizationalUnitDN,
-        [Parameter(Mandatory=$true,HelpMessage="Enable or disable Protection from Accidental Deletion")][Switch]$Disable
+        [Parameter(Mandatory=$false,HelpMessage="Enable or disable Protection from Accidental Deletion")][Switch]$Disable
     )
     # Declare variables
     [Boolean] $Enable = $true

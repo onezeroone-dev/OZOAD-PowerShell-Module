@@ -2,4 +2,4 @@
 
 |Date|Version|Comment|
 |----|-------|-------|
-|2025-Mar-01|1.0.0|Initial release; added `Get-OZOADBitLockerRecovery`, `Get-OZOADComputers`, `Get-OZOADUsers`, `New-OZOADExtendedRightsMap`, `New-OZOADGuidMap`, `Set-OZOADPad`.|
+|2025-Mar-02|1.0.0|Initial release; added `Get-OZOADBitLockerRecovery`, `Get-OZOADComputers`, `Get-OZOADUsers`, `New-OZOADExtendedRightsMap`, `New-OZOADGuidMap`, `Set-OZOADPad`.|
